@@ -35,9 +35,23 @@ data/raw/*.xlsx
 # Sí mantener el .gitkeep para conservar la estructura
 !data/raw/.gitkeep
 
+# El dataset del proyecto sí se versiona (3.6 MB): permite ejecutar el pipeline
+# completo recién clonado el repositorio, sin dependencias externas.
+!data/raw/fraud_oracle.csv
+
 # NOTA: data/processed/fraud_clean.csv y models/*.pkl SÍ se incluyen
 # en el repositorio porque son necesarios para que la app funcione
 # en deploys (Streamlit Cloud, Heroku, etc.) sin tener que reentrenar.
+
+# --------------------------------------------------------------
+# Seguimiento de experimentos y orquestación
+# El backend de MLflow y sus artefactos se regeneran ejecutando el flow;
+# lo que sí se versiona es el modelo campeón exportado (models/champion/).
+# --------------------------------------------------------------
+mlruns/
+mlartifacts/
+mlflow.db
+.prefect/
 
 # --------------------------------------------------------------
 # Secretos y configuración local

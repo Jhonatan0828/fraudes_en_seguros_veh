@@ -9,13 +9,9 @@ import joblib
 import pandas as pd
 
 from .config import (
-    BEST_MODEL_PATH, CLEAN_DATASET, METADATA_PATH, MODELS_DIR,
+    BEST_MODEL_PATH, CLEAN_DATASET, METADATA_PATH, MODELS_DIR, RAW_DATASET,
 )
 
-# Agrega RAW_DATASET a tus imports de config
-from .config import (
-    BEST_MODEL_PATH, CLEAN_DATASET, METADATA_PATH, MODELS_DIR, RAW_DATASET
-)
 
 def load_raw_dataset() -> pd.DataFrame:
     """Carga el dataset original directamente de la carpeta raw/."""
@@ -31,7 +27,7 @@ def load_clean_dataset() -> pd.DataFrame:
     if not CLEAN_DATASET.exists():
         raise FileNotFoundError(
             f"Dataset limpio no encontrado en {CLEAN_DATASET}. "
-            "Ejecuta el notebook de entrenamiento primero."
+            "Ejecuta el pipeline primero: python -m flows.training_flow"
         )
     return pd.read_csv(CLEAN_DATASET)
 
@@ -41,7 +37,8 @@ def load_metadata() -> Dict[str, Any]:
     if not METADATA_PATH.exists():
         raise FileNotFoundError(
             f"Metadata no encontrada en {METADATA_PATH}. "
-            "Ejecuta el notebook de entrenamiento primero."
+            "La genera el notebook notebooks/fraud_detection_analysis.ipynb, "
+            "que alimenta la app de exploración."
         )
     return joblib.load(METADATA_PATH)
 

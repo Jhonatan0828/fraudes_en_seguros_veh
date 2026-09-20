@@ -21,8 +21,9 @@ def main() -> None:
 
     st.title("🔍 Detección de Fraude en Seguros Vehiculares")
     st.markdown(
-        "Aplicación académica — Universidad de Medellín — Proyecto 1 | "
-        "Profesor: David Palacio Jimenez | "
+        "Aplicación académica — Universidad de Medellín — "
+        "Aprendizaje Automático en la Nube | "
+        "Profesora: Maria Camila Durango Barrera | "
         "Estudiantes: Andres Felipe Londoño Ocampo · Jhonatan Caro Atehortúa · "
         "Paulina Perez Ramirez · Victor Manuel Galeano Alvarez"
     )
@@ -42,8 +43,8 @@ def main() -> None:
     except FileNotFoundError as e:
         st.error(
             f"⚠️ {e}\n\n"
-            "Asegúrate de haber ejecutado el notebook `notebooks/fraud_detection_analysis.ipynb` "
-            "para generar los artefactos del modelo."
+            "El dataset procesado lo genera el pipeline (`python -m flows.training_flow`) "
+            "y los artefactos de esta app el notebook `notebooks/fraud_detection_analysis.ipynb`."
         )
         st.stop()
 
