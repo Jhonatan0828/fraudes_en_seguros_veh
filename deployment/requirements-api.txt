@@ -1,0 +1,7 @@
+# Dependencias exclusivas del servicio web.
+# Las del modelo (scikit-learn, xgboost, mlflow, pandas...) las instala el
+# requirements.txt que MLflow genera dentro de models/champion/.
+fastapi>=0.110
+uvicorn[standard]>=0.30
+pydantic>=2.7
+python-dotenv>=1.0

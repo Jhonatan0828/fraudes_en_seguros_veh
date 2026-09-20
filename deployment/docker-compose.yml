@@ -1,0 +1,20 @@
+# Levanta el servicio de predicción:
+#   docker compose -f deployment/docker-compose.yml up --build
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    image: fraud-detection-api:1.0.0
+    container_name: fraud-detection-api
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_URI: /app/models/champion
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped

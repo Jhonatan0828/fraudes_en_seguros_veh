@@ -1,0 +1,59 @@
+artifact_path: file:///C:/Users/victo/Desktop/Universidad/2.Posgrado/2. Semestre 2/3.
+  Aprendizaje Automatico en la Nube/Entrega Final/fraudes_en_seguros_veh/mlruns/1/models/m-78fcaf25dd2a4bef8d1e02a0e399dcc0/artifacts
+flavors:
+  python_function:
+    code: code
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: code
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.16.1
+model_id: m-78fcaf25dd2a4bef8d1e02a0e399dcc0
+model_size_bytes: 562674
+model_uuid: m-78fcaf25dd2a4bef8d1e02a0e399dcc0
+prompts: null
+run_id: 04ab0b783e3a4241b60ebd203fc19bb0
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "string", "name": "Month", "required": true}, {"type": "long",
+    "name": "WeekOfMonth", "required": true}, {"type": "string", "name": "DayOfWeek",
+    "required": true}, {"type": "string", "name": "Make", "required": true}, {"type":
+    "string", "name": "AccidentArea", "required": true}, {"type": "string", "name":
+    "DayOfWeekClaimed", "required": true}, {"type": "string", "name": "MonthClaimed",
+    "required": true}, {"type": "long", "name": "WeekOfMonthClaimed", "required":
+    true}, {"type": "string", "name": "Sex", "required": true}, {"type": "string",
+    "name": "MaritalStatus", "required": true}, {"type": "long", "name": "Age", "required":
+    true}, {"type": "string", "name": "Fault", "required": true}, {"type": "string",
+    "name": "PolicyType", "required": true}, {"type": "string", "name": "VehicleCategory",
+    "required": true}, {"type": "string", "name": "VehiclePrice", "required": true},
+    {"type": "long", "name": "PolicyNumber", "required": true}, {"type": "long", "name":
+    "RepNumber", "required": true}, {"type": "long", "name": "Deductible", "required":
+    true}, {"type": "long", "name": "DriverRating", "required": true}, {"type": "string",
+    "name": "Days_Policy_Accident", "required": true}, {"type": "string", "name":
+    "Days_Policy_Claim", "required": true}, {"type": "string", "name": "PastNumberOfClaims",
+    "required": true}, {"type": "string", "name": "AgeOfVehicle", "required": true},
+    {"type": "string", "name": "AgeOfPolicyHolder", "required": true}, {"type": "string",
+    "name": "PoliceReportFiled", "required": true}, {"type": "string", "name": "WitnessPresent",
+    "required": true}, {"type": "string", "name": "AgentType", "required": true},
+    {"type": "string", "name": "NumberOfSuppliments", "required": true}, {"type":
+    "string", "name": "AddressChange_Claim", "required": true}, {"type": "string",
+    "name": "NumberOfCars", "required": true}, {"type": "long", "name": "Year", "required":
+    true}, {"type": "string", "name": "BasePolicy", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-09-20 22:26:24.546882'
