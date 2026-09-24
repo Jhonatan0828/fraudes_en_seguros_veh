@@ -1,5 +1,4 @@
-artifact_path: file:///C:/Users/victo/Desktop/Universidad/2.Posgrado/2. Semestre 2/3.
-  Aprendizaje Automatico en la Nube/Entrega Final/fraudes_en_seguros_veh/mlruns/1/models/m-78fcaf25dd2a4bef8d1e02a0e399dcc0/artifacts
+artifact_path: file:///C:/Users/Jhonatan/Desktop/udem/10.nube/fraudes_en_seguros_veh/mlruns/1/models/m-2f879eade21f4d4c9824094e5d28b758/artifacts
 flavors:
   python_function:
     code: code
@@ -9,7 +8,7 @@ flavors:
     loader_module: mlflow.sklearn
     model_path: model.pkl
     predict_fn: predict
-    python_version: 3.11.9
+    python_version: 3.11.15
   sklearn:
     code: code
     pickled_model: model.pkl
@@ -18,11 +17,11 @@ flavors:
     skops_trusted_types: null
 is_signature_from_type_hint: false
 mlflow_version: 3.16.1
-model_id: m-78fcaf25dd2a4bef8d1e02a0e399dcc0
-model_size_bytes: 562674
-model_uuid: m-78fcaf25dd2a4bef8d1e02a0e399dcc0
+model_id: m-2f879eade21f4d4c9824094e5d28b758
+model_size_bytes: 563353
+model_uuid: m-2f879eade21f4d4c9824094e5d28b758
 prompts: null
-run_id: 04ab0b783e3a4241b60ebd203fc19bb0
+run_id: e5bfb4e6c6ff431dba516a7aeeb928e5
 saved_input_example_info:
   artifact_path: input_example.json
   pandas_orient: split
@@ -56,4 +55,4 @@ signature:
   outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
   params: null
 type_hint_from_example: false
-utc_time_created: '2026-09-20 22:26:24.546882'
+utc_time_created: '2026-09-24 00:52:07.755137'

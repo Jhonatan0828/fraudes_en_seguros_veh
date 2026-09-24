@@ -92,3 +92,7 @@ htmlcov/
 # --------------------------------------------------------------
 .lock
 CACHEDIR.TAG
+
+# archivos .tar
+*.tar
+*.tar.gz

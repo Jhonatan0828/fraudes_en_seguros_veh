@@ -1,13 +1,13 @@
 {
   "registered_model": "fraud-detection-classifier",
   "version": 1,
-  "run_id": "04ab0b783e3a4241b60ebd203fc19bb0",
-  "exported_at": "2026-09-20T22:26:27+00:00",
-  "prefect_flow_run_id": "19c6187a-b25b-418f-b6f5-660da9e78710",
+  "run_id": "e5bfb4e6c6ff431dba516a7aeeb928e5",
+  "exported_at": "2026-09-24T00:52:15+00:00",
+  "prefect_flow_run_id": "23f51f3a-6555-4b51-89e9-5ce86f77e77a",
   "dataset": "fraud_oracle",
   "model_name": "XGBoost",
-  "decision_threshold": "0.658870",
+  "decision_threshold": "0.649738",
   "selection_metric": "pr_auc",
-  "selection_score": "0.241331",
-  "promoted_at": "2026-09-20T22:26:27+00:00"
+  "selection_score": "0.241104",
+  "promoted_at": "2026-09-24T00:52:14+00:00"
 }
